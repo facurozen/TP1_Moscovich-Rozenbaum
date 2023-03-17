@@ -1,7 +1,7 @@
 using System;
 namespace Pizzas.API.Models
 {
-    public class Pizzas
+    public class Pizza
     {
         private int _id;
         private string _nombre;
@@ -9,7 +9,7 @@ namespace Pizzas.API.Models
         private float _importe;
         private string _descripcion;
 
-        public Pizzas(int id, string nombre, bool libreGluten, float importe, string descripcion)
+        public Pizza(int id, string nombre, bool libreGluten, float importe, string descripcion)
         {   
             _id = id;
             _nombre = nombre;
@@ -17,7 +17,7 @@ namespace Pizzas.API.Models
             _importe = importe;
             _descripcion = descripcion;
         }
-        public Pizzas(){}
+        public Pizza(){}
          public int id
         {
             get {return _id;}
